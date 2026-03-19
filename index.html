@@ -236,6 +236,18 @@
         max-width: 580px;
         border-radius: 2px;
         overflow: hidden;
+        opacity: 0;
+        animation: heroFrameEnter 1s ease 0.9s forwards;
+      }
+      @keyframes heroFrameEnter {
+        from {
+          opacity: 0;
+          transform: translateY(calc(-50% + 40px));
+        }
+        to {
+          opacity: 1;
+          transform: translateY(-50%);
+        }
       }
       .hero-photo {
         width: 100%;
